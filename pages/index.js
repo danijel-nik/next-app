@@ -1,15 +1,9 @@
 import { server } from '../config'
-import Head from 'next/head'
 import ArticleList from '../components/ArticleList'
 
 const home = ({ articles }) => {
   return (
     <>
-      <Head>
-        <title>WebDev News</title>
-        <meta name="keywords" content="web development, programming, coding" />
-      </Head>
-
       <ArticleList articles={articles} />
     </>
   )
